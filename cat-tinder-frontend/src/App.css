@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+.header {
+  background-color: black;
+  color: blue; 
+  margin-bottom: 5px; 
+  font-size: 50px; 
+}
+
+.footer {
+  background-color: black;
+  color:red; 
+  margin-bottom: 5px; 
+  font-size: 15px; 
+}
+
+.home {
+  color: purple; 
+  margin-bottom: 5px; 
+  font-size: 25px; 
+}
+
+.notFound {
+  color: red; 
+  margin-bottom: 5px; 
+  font-size: 40px; 
+}

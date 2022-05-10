@@ -9,6 +9,7 @@ import CatNew from './pages/CatNew'
 import CatShow from './pages/CatShow'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
+import './App.css'
 
 
 class App extends Component {
