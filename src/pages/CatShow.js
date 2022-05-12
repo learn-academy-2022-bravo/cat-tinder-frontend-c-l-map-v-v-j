@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 
 export default class CatShow extends Component {
   render() {
-    let {cat} = this.props
-    return (
+    let { cat } = this.props
+    return(
       <>
       <h2>Cat Show</h2>
       <p>{cat.name}</p>

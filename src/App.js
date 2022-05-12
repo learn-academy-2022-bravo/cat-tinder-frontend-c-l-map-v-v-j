@@ -12,6 +12,7 @@ import NotFound from './pages/NotFound'
 import './App.css'
 
 
+
 class App extends Component {
   constructor(props) {
     super(props)
@@ -21,7 +22,6 @@ class App extends Component {
 }
 
   render() {
-    console.log(this.state.cats)
     return (
       <Router>
       <Header />
@@ -29,15 +29,15 @@ class App extends Component {
     <Route exact path="/" component={Home} />
     <Route 
     path="/catindex" 
-    render={(props)=>
-       <CatIndex cats={this.state.cats}/>} 
+    render={(props)=> <CatIndex cats={this.state.cats}/>} 
     />
     <Route 
     path="/catshow/:id"
-    render={(props)=>{ 
-      let id = +props.match.params.id
-      let cat = this.state.cats.find(catObject => catObject.id === id)
-    return <CatShow cat={cat} />}}
+    render={(props)=> { 
+      let id = props.match.params.id
+      let cat = this.state.cats.find(catObject => catObject.id === +id)
+      return <CatShow cat={cat} />
+    }}
     />
     <Route path="/catnew" component={CatNew} />
     <Route path="/catedit" component={CatEdit} />
@@ -48,8 +48,4 @@ class App extends Component {
     )
   }
 }
-
-
-
-
 export default App

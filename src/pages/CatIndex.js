@@ -3,7 +3,6 @@ import {NavLink} from 'react-router-dom'
 
 export default class CatIndex extends Component {
   render() {
-    console.log(this.props.cats)
     return (
       <>
       <h3>Cat Index</h3>
