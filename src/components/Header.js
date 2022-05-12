@@ -7,11 +7,11 @@ export default class Header extends Component {
   render() {
     return (
       <Nav className="headerNav">
-      <NavItem>
-        <NavLink to="/">
-          <img src={catlogo} alt="logo for Cat Tinder" className="catlogo" />
-        </NavLink>
-      </NavItem>
+        <NavItem>
+          <NavLink to="/">
+            <img src={catlogo} alt="logo for Cat Tinder" className="catlogo" />
+          </NavLink>
+        </NavItem>
         <NavItem>
           <NavLink to="/catindex" className="nav-link">Meet the Cats</NavLink>
         </NavItem>
@@ -27,14 +27,3 @@ export default class Header extends Component {
     )
   }
 }
-
-
-
-
-/* <>
-<div className="header">
-  <NavLink to="/">Home</NavLink>
-  <NavLink to="/catindex">Cat Profiles</NavLink>
-  <NavLink to="/catnew">New Cat User</NavLink>
-</div>
-</> */
