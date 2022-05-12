@@ -1,11 +1,8 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+
+/* .App {
+  text-align: center;
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,20 +10,9 @@
   }
 }
 
-.App-header {
-  background-color: #0f55e1;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
+/* .App-link {
+  color: #f0ff65;
+} */
 
 @keyframes App-logo-spin {
   from {
@@ -37,28 +23,68 @@
   }
 }
 
-.header {
-  background-color: black;
-  color: blue; 
-  margin-bottom: 5px; 
-  font-size: 50px; 
+
+
+/*-----------------------HEADER-----------------------*/
+.headerNav {
+    background-color: #403401ee;
+    justify-content: space-between;
+    padding-left: 100px;
+    color:#000
+}
+.catlogo {
+  width: 220px;
+  padding-left: 30px;
 }
 
-.footer {
-  background-color: black;
-  color:red; 
-  margin-bottom: 5px; 
-  font-size: 15px; 
+
+/*-----------------------FOOTER------------------------*/
+.footerNav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0px;
+  background-color: #403401ee;
 }
 
-.home {
-  color: purple; 
-  margin-bottom: 5px; 
-  font-size: 25px; 
+
+/*------------------------HOME---------------------------*/
+.homeCat {
+  height: 350px;
+  border-radius: 20%;
+  border: 3px solid black;
+}
+.body { /*this is the styling for the Welcome to Cat Tinder*/
+  margin: 3rem;
+  text-align: center;
+  font-family: "Luminari";
+  color: rgb(1, 109, 61)
 }
 
-.notFound {
-  color: red; 
-  margin-bottom: 5px; 
-  font-size: 40px; 
+
+/*-----------------------NOT FOUND-----------------------*/
+.notfoundcat {
+  font-size: 50; 
+  height: 450px;
+  border-radius: 30%;
+  text-align: center;
+  margin: 3rem;
+  font-family: "Luminari";
+  color: rgb(1, 109, 61)
+  }
+
+/*-----------------------NAV LINKS-----------------------*/
+.nav-link {
+  color: rgb(27, 174, 108) !important;
+  margin-bottom: 10px;
+  font-weight: 900;
+  font-family: "Papyrus";
+}
+.nav-link:hover {
+  color: rgb(10, 0, 0) !important;
+}
+.nav-item {
+  align-self: flex-end;
 }
