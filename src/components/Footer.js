@@ -6,22 +6,22 @@ export default class Footer extends Component {
   render() {
     return (
       <Nav className="footerNav">
-      <NavItem>
-        <NavLink to="/" className="nav-link">
-          &copy; Cj & LJ
-        </NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink to="/catindex" className="nav-link">
-          Cat Profiles
-        </NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink to="/catnew" className="nav-link">
-          New Cat
-        </NavLink>
-      </NavItem>
-    </Nav>
+        <NavItem>
+          <NavLink to="/" className="nav-link">
+            &copy; Cj & LJ
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink to="/catindex" className="nav-link">
+            Cat Profiles
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink to="/catnew" className="nav-link">
+            New Cat
+          </NavLink>
+        </NavItem>
+      </Nav>
     )
   }
 }

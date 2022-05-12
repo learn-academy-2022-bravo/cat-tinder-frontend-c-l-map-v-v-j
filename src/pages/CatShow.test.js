@@ -10,11 +10,10 @@ Enzyme.configure({adapter: new Adapter()})
 
 describe("When CatShowrenders", () => {
     let cat = {
-        name: "Bob",
-        id: 4,
-        age: 36,
-        enjoys: "long walks on the beach"
-
+      name: "Bob",
+      id: 4,
+      age: 36,
+      enjoys: "long walks on the beach"
     }
     it(" displays a heading", () => {
       const catShow = shallow(<CatShow cat={cat} />)
